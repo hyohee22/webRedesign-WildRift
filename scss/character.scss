@@ -1,0 +1,268 @@
+/* Import Local SCSS Files */
+@import 'variables', 'reset', 'fonts', 'header', 'footer';
+
+/* common */
+body {
+  overflow-x: hidden;
+}
+
+section {
+  height: 100vh;
+}
+
+/* inner */
+[class*=inner] {
+  width: 1400px;
+  height: inherit;
+  margin: auto;
+}
+
+.character{
+  width: 100vw; height: 100vh;
+  .character-wrap{
+    .character-main{
+      width: inherit; height: 100vh;
+      background: url(../images/darius-sub-bg.png) no-repeat top;
+      background-size: cover;
+      .main-title{
+        bottom: 12%; padding: 500px 50px 50px 100px;
+        h1{
+          font-size: 200px;
+          font-family: $Title-Font-Bold;
+        }
+        h2{
+          font-size: 40px;
+          font-family: $Title-Font-Bold;
+          padding: 20px;
+          em{
+            font-size: 45px;
+            color: $Lol-Gold;
+          }
+        }
+      }
+      .character-logo{
+        position: absolute;
+        right: 50px; bottom: 50px;
+        img{width: 220px;}
+      }
+    }
+    .darius-desc{
+      width: 100vw; height: 100vh;
+      background-color: $Light-Black;
+      position: relative;
+      .darius-desc-wrap{
+        position: absolute;
+
+        top: 50px; left: 35px;
+        width: calc(100vw - 100px);
+        height: calc(100vh - 100px);
+        margin: auto; 
+        border: 2px solid $Lol-Gold;
+        .desc-ribbon{
+          position: absolute;
+          top: -45px; left: 37%;
+          z-index: 1;
+          img{
+            width: 500px;
+          } 
+        }
+        .desc-items{
+          display: flex; justify-content: space-around;
+          align-items: center;
+          .desc-item-img{
+            img{
+              width: 750px;
+              margin-top: 25px; 
+              margin-right: -100px;
+            }
+          }
+          .desc-item-ex{
+            width: 800px; padding: 30px;
+            .desc-item-ex-title{
+              padding: 40px;
+              h2{
+                font-size: 35px;
+                font-family: $Title-Font-Bold;
+                line-height: 50px; padding: 20px;
+              }
+              p{
+                width: 650px;
+                font-size: 18px;
+                line-height: 25px;
+              }
+            }
+            .desc-item-box{
+              display: flex; justify-content: start;
+              margin-left: 40px;
+              gap: 40px;
+              .desc-item-position{
+                width: 200px; height: 130px;
+                border: 1px solid $Lol-Gold;
+                .position-box{
+                  text-align: center;
+                  margin: auto; margin-top: 20px;
+                  width: 160px; height: 90px;
+                  background-color: $Lol-Navy;
+                  .position{
+                    margin-bottom: 10px;
+                    img{
+                      margin-top: 10px;
+                      width: 40px; margin-left: 10px;
+                    }
+                  }
+                  p{color: $Lol-Gold;}
+                }
+              }
+              .desc-item-level{
+                width: 200px; height: 130px;
+                border: 1px solid $Lol-Gold;
+                .level-box{
+                  width: 160px; height: 90px;
+                  text-align: center;
+                  margin: auto; margin-top: 20px;
+                  background-color: $Lol-Navy;
+                  img{width: 100px; margin-top: 20px; margin-bottom: 20px;}
+                  p{color: $Lol-Gold;}
+                }
+              }
+            }
+            .desc-skill-items{
+              width: 660px; margin-left: 40px;
+              display: flex; justify-content: space-between;
+              margin-top: 80px;
+              .desc-skill-item{
+                text-align: center;
+                img{
+                  transition: 0.3s;
+                  &:hover{
+                    transform: translateY(-10px);
+                  }
+                }
+                span{
+                  margin-top: 20px;
+                  display: block;
+                  color: $Lol-Gold;
+                }
+              }
+            }
+          }
+        }
+      } 
+    }
+    .skill{
+      width: 100vw; height: 100vh;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      &::before{
+        content: "";
+        position: absolute;
+        inset: 0; 
+        background: url(../images/darius-sub-bg.png) no-repeat center/cover;
+        opacity: 0.2;
+        z-index: -1;
+      }
+      h2{
+        font-size: 40px;
+        font-family: $Title-Font-Bold;
+        padding: 30px; margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      .skill-wrap{
+        display: flex; justify-content: center;
+        gap: 80px;
+        .skill-icon{
+          width: 50px; margin-top: 30px;
+          img{
+            margin-bottom: 40px;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover{
+              box-shadow: 0 0 10px $White;
+            }
+          }
+        }
+        .skill-video-wrap{
+          width: 800px; height: 540px;
+          border: 1px solid $Lol-Gold;
+          #skillVideo{width: 800px; height: 500px;
+            margin-top: 20px;
+            }
+        }
+        .skill-description{
+          font-size: 18px; line-height: 25px;
+          margin-top: 30px;
+          em{
+            font-size: 20px; margin-top: 10px;
+            font-family: $Title-Font-Bold;
+            color: $Lol-Gold; margin-bottom: 5px;
+            display: block;
+          }
+        }
+      }
+    }
+    .character-bg-img{
+      position: relative;
+      .character-bg-img-wrap{
+        display: flex;
+        flex-direction: column; gap: 20px;
+        overflow: hidden;
+        .scroll-line{
+          white-space: nowrap;
+          overflow: hidden; height: 100px;
+          .scroll-content{
+            display: flex;
+            animation-duration: 40s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            img{
+              flex-shrink: 0;
+              width: auto;
+              height: 100px;
+              margin-right: 20px;
+              cursor: pointer;
+            }
+          }
+          &.right-scroll .scroll-content {
+            animation-name: scrollRight;
+          }
+          &.left-scroll .scroll-content {
+            animation-name: scrollLeft;
+          }
+          @keyframes scrollRight {
+            0% {
+              transform: translateX(-50%);
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          @keyframes scrollLeft {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+        } 
+      }
+      .character-bg-img-overlay{
+        position: absolute;
+        cursor: pointer;
+        width: 100vw; height: 600px;
+        top: 0;
+        background: linear-gradient(
+        to right,black 0%,transparent 30%,transparent 50%,
+      black 100%
+    );
+      }
+    }
+  }
+}
+
+.footer-include{
+  position: absolute;
+  bottom: -300vh; left: 0;
+  z-index: 100000000;
+}

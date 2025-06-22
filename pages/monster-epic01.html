@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wild Rift: League of Legends</title>
+
+  <!---------------- favicon ---------------->
+  <link rel="icon" href="../images/wildrift-symbol-skyblue.png">
+
+  <!---------------- aos ---------------->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!---------------- swiper ---------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!---------------- bootstrap icons ---------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!---------------- style ---------------->
+  <link rel="stylesheet" href="../css/monster.css">
+</head>
+
+<body>
+
+  <!-- header -->
+  <div class="header-include"></div>
+
+  <!-- section .monster-more-info -->
+  <section class="monster-more-info">
+    <div class="monster-background-wrap">
+      <div class="monster-background-inner">
+        <img src="../images/monster-epic-3d01.png" alt="epic-monster-img" class="monster-3d-image">
+        <b class="monster-name-en">Baron Nashor</b>
+        <h2 class="monster-name-kr">내셔 남작</h2>
+      </div>
+      <img src="../images/monster-epic-background01.png" alt="epic-monster-background" class="monster-background-image">
+    </div>
+    <div class="monster-more-info-inner">
+      <div class="monster-info-title-anchor">
+        <ul>
+          <li><a href="#statistics-info">능력치</a></li>
+          <li><a href="#bounty-info">처치 보상</a></li>
+          <li><a href="#buff-info">남작의 도움</a></li>
+          <li><a href="#monster-more-monster">다른 몬스터 보기</a></li>
+        </ul>
+      </div>
+      <div class="monster-basic-info">
+        <p>
+          내셔 남작은 정글에서 가장 강력한 몬스터입니다. <br>
+          내셔 남작을 처치하면 해당 팀 전체가 공격력 및 주문력 증가, 귀환 강화 효과를 얻으며, <br>
+          챔피언 근처의 강력한 미니언이 생성됩니다. <br>
+        </p>
+        <img src="../images/monster-epic-map01.png" alt="epic-monster-map-img">
+      </div>
+      <div class="monster-statistics-info" id="statistics-info">
+        <h3>능력치</h3>
+        <table>
+          <tbody>
+            <tr>
+              <td><img src="../images/monster-icon-health.webp" alt="health-icon">체력</td>
+              <td colspan="3">15900 + 1분마다 180</td>
+            </tr>
+            <tr>
+              <td><img src="../images/monster-icon-attack-damage.webp" alt="attack-damage-icon" class="icon1">공격력</td>
+              <td>400</td>
+              <td><img src="../images/monster-icon-attack-speed.webp" alt="attack-speed-icon" class="icon2">공격 속도</td>
+              <td>0.63</td>
+            </tr>
+            <tr>
+              <td><img src="../images/monster-icon-armor.webp" alt="armor-icon" class="icon3" >방어력</td>
+              <td>120</td>
+              <td><img src="../images/monster-icon-magic-resistance.webp" alt="magic-resistance-icon" class="icon4">마법 저항력</td>
+              <td>70</td>
+            </tr>
+            <tr>
+              <td><img src="../images/monster-icon-range.webp" alt="range-icon" class="icon5">사정거리</td>
+              <td>955</td>
+              <td><img src="../images/monster-icon-movement-speed.webp" alt="movement-speed-icon" class="icon6">이동속도</td>
+              <td>300</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="monster-bounty-info" id="bounty-info">
+        <h3>처치 보상</h3>
+        <table>
+          <tbody>
+            <tr>
+              <td>골드</td>
+              <td>300</td>
+              <td>CS</td>
+              <td>4</td>
+              <td>경험치</td>
+              <td>600</td>
+            </tr>
+            <tr>
+              <td colspan="2">버프</td>
+              <td colspan="4">남작의 도움</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="monster-buff-info" id="buff-info">
+        <h3>남작의 도움 <img src="../images/monster-epic-buff01.webp" alt="epic-buff-icon"></h3>
+        <ul>
+          <li><b class="attack-damage">공격력</b> 및 <b class="magic-damage">주문력</b> 수치 증가</li>
+          <li>강화된 귀환: 귀환을 강화해 정신 집중 시간 반으로 감소</li>
+          <li>근처 미니언을 강화</li>
+          <li>지속시간: 3분 (180초) / 사망시 소멸</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- section .monster-more-monster -->
+  <section class="monster-more-monster" id="monster-more-monster">
+    <div class="monster-more-monster-inner">
+      <h3>다른 몬스터 보기</h3>
+      <div class="swiper monster-more-swiper">
+        <div class="swiper-wrapper">
+          <!-- 01 -->
+          <div class="swiper-slide">
+            <a href="#none">
+              <div class="monster-background-image">
+                <img src="../images/monster-epic-background01.png" alt="monster-background-image">
+              </div>
+              <div class="monster-info-box">
+                <strong>내셔 남작</strong>
+                <span>내셔 남작을 처치하고 남작의 도움을 획득해 게임을 승리로 이끄세요.</span>
+              </div>
+              <div class="monster-3d-image">
+                <img src="../images/monster-epic-3d01.png" alt="monster-3d-image">
+              </div>
+            </a>
+          </div>
+          <!-- 02 -->
+          <div class="swiper-slide">
+            <a href="#none">
+              <div class="monster-background-image">
+                <img src="../images/monster-epic-background02.webp" alt="monster-background-image">
+              </div>
+              <div class="monster-info-box">
+                <strong>협곡의 전령</strong>
+                <span>협곡의 전령을 처치하고 적군을 압박하세요.</span>
+              </div>
+              <div class="monster-3d-image">
+                <img src="../images/monster-epic-3d02.webp" alt="monster-3d-image">
+              </div>
+            </a>
+          </div>
+          <!-- 03 -->
+          <div class="swiper-slide">
+            <a href="#none">
+              <div class="monster-background-image">
+                <img src="../images/monster-epic-background03.png" alt="monster-background-image">
+              </div>
+              <div class="monster-info-box">
+                <strong>공허 유충</strong>
+                <span>공허 유충을 처치하고 포탑에 추가 피해를 입히세요.</span>
+              </div>
+              <div class="monster-3d-image void">
+                <img src="../images/monster-epic-3d03.webp" alt="monster-3d-image">
+              </div>
+            </a>
+          </div>
+          <!-- 04 -->
+          <div class="swiper-slide">
+            <a href="#none">
+              <div class="monster-background-image">
+                <img src="../images/monster-epic-background04.webp" alt="monster-background-image">
+              </div>
+              <div class="monster-info-box">
+                <strong>화염 드래곤</strong>
+                <span>화염 드래곤을 처치하고 적응형 공격력 및 주문력 증가의 효과를 획득하세요.</span>
+              </div>
+              <div class="monster-3d-image">
+                <img src="../images/monster-epic-3d04.webp" alt="monster-3d-image">
+              </div>
+            </a>
+          </div>
+          <!-- 05 -->
+          <div class="swiper-slide">
+            <a href="#none">
+              <div class="monster-background-image">
+                <img src="../images/monster-epic-background05.webp" alt="monster-background-image">
+              </div>
+              <div class="monster-info-box">
+                <strong>바다 드래곤</strong>
+                <span>바다 드래곤을 처치하고 잃은 체력 비례 체력 회복의 효과를 획득하세요.</span>
+              </div>
+              <div class="monster-3d-image ocean">
+                <img src="../images/monster-epic-3d05.webp" alt="monster-3d-image">
+              </div>
+            </a>
+          </div>
+          <!-- 06 -->
+          <div class="swiper-slide">
+            <a href="#none">
+              <div class="monster-background-image">
+                <img src="../images/monster-epic-background06.webp" alt="monster-background-image">
+              </div>
+              <div class="monster-info-box">
+                <strong>대지 드래곤</strong>
+                <span>대지 드래곤을 처치하고 방어력 및 마법 저항력 증가의 효과를 획득하세요.</span>
+              </div>
+              <div class="monster-3d-image">
+                <img src="../images/monster-epic-3d06.webp" alt="monster-3d-image">
+              </div>
+            </a>
+          </div>
+          <!-- 07 -->
+          <div class="swiper-slide">
+            <a href="#none">
+              <div class="monster-background-image">
+                <img src="../images/monster-epic-background07.webp" alt="monster-background-image">
+              </div>
+              <div class="monster-info-box">
+                <strong>장로 드래곤</strong>
+                <span>장로 드래곤을 처치하고 적군을 처형 가능한 버프를 획득하세요.</span>
+              </div>
+              <div class="monster-3d-image">
+                <img src="../images/monster-epic-3d07.webp" alt="monster-3d-image">
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next"><i class="bi bi-chevron-right"></i></div>
+        <div class="swiper-button-prev"><i class="bi bi-chevron-left"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <div class="footer-include"></div>
+
+  <!---------------- aos ---------------->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
+  <!---------------- swiper ---------------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  
+  <!-- js -->
+  <script src="../js/monster.js"></script>
+
+</body>
+  
+</html>

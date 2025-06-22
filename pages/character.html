@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wild Rift: League of Legends</title>
+
+  <!---------------- favicon ---------------->
+  <link rel="icon" href="../images/wildrift-symbol-skyblue.png">
+
+  <!---------------- aos ---------------->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!---------------- swiper ---------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!---------------- bootstrap icons ---------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!---------------- style ---------------->
+  <link rel="stylesheet" href="../css/character.css">
+</head>
+
+<body>
+  <!-- header -->
+  <div class="header-include"></div>
+  <!---------------- character ---------------->
+  <section class="character">
+    <div class="character-wrap">
+      <div class="character-main">
+        <div class="main-title">
+          <h1>DARIUS</h1>
+          <h2>녹서스의 실력자 <em>다리우스</em></h2>
+        </div>
+        <div class="character-logo">
+          <img src="../images/banner-logo.png" alt="">
+        </div>
+      </div>
+      <section class="darius-desc">
+        <div class="darius-desc-wrap">
+          <div class="desc-ribbon">
+            <img src="../images/position-box.png" alt="">
+          </div>
+          <div class="desc-items">
+            <div class="desc-item-img">
+              <img src="../images/character-sub-darius.png" alt="" data-aos="fade-right">
+            </div>
+            <div class="desc-item-ex">
+              <div class="desc-item-ex-title">
+                <h2>
+                  “역사는 승자만을 기억하는 법. <br>
+                  녹서스와 함께한다면 영원히 기억되리라.”
+                </h2>
+                <p>
+                  녹서스 그 자체를 상징하는 인물로 다리우스만큼 어울리는 사람도 없을 것이다.  실전에서 단련된 사령관이자 녹서스 내에서조차도 두려움의 대상이니까. 다리우스는 미천한 집안에서 태어났으나 녹서스 제국의 적들을 파죽지세로 베어넘기면서 트리파르 군단 사령관이라는 지금의 자리와 권력을 획득했다. 문제는 그 적들 다수가 녹서스 인이었다는 사실이다. 다리우스는 자신의 명분이 정당하다는 것을 한 번도 의심한 적이 없으며, 도끼를 치켜들 때에도 망설임이 없다. 그러니 다리우스에게 맞서는 자는 자비를 바랄 수 없다.
+                </p>
+              </div>
+              <div class="desc-item-box">
+                <div class="desc-item-position">
+                  <div class="position-box">
+                    <div class="position">
+                      <img src="../images/position-job01.png" alt="">
+                      <img src="../images/position-job02.png" alt="">
+                    </div>
+                    <p>전사 / 탱커</p>
+                  </div>
+                </div>
+                <div class="desc-item-level">
+                  <div class="level-box">
+                    <img src="../images/darius-level01.png" alt="">
+                    <p>난이도 낮음</p>
+                  </div>
+                </div>
+              </div>
+              <div class="desc-skill-items">
+                <div class="desc-skill-item">
+                  <img src="../images/darius-skill01.png" alt="">
+                  <span>과다출혈</span>
+                </div>
+                <div class="desc-skill-item">
+                  <img src="../images/darius-skill02.png" alt="">
+                  <span>학살</span>
+                </div>
+                <div class="desc-skill-item">
+                  <img src="../images/darius-skill03.png" alt="">
+                  <span>마비의일격</span>
+                </div>
+                <div class="desc-skill-item">
+                  <img src="../images/darius-skill04.png" alt="">
+                  <span>포획</span>
+                </div>
+                <div class="desc-skill-item">
+                  <img src="../images/darius-skill05.png" alt="">
+                  <span>단두대</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skill">
+        <h2>주요 스킬을 영상으로 만나보세요!</h2>
+        <div class="skill-wrap">
+          <div class="skill-icon">
+            <img src="../images/darius-skill01.png" alt="" onclick="changeSkill(0)">
+            <img src="../images/darius-skill02.png" alt=""onclick="changeSkill(1)">
+            <img src="../images/darius-skill03.png" alt=""onclick="changeSkill(2)">
+            <img src="../images/darius-skill04.png" alt=""onclick="changeSkill(3)">
+            <img src="../images/darius-skill05.png" alt=""onclick="changeSkill(4)">
+          </div>
+          <div class="skill-video-wrap">
+            <video id="skillVideo" src="../videos/darius-skill01.mp4" controls autoplay muted></video>
+            <div class="skill-description" id="skillDesc" data-aos="fade-up">
+            <em>
+            과다출혈</em><br>
+            다리우스의 기본 공격과 스킬 공격은 적에게 출혈을 일으켜 5초 동안 물리 피해를 입힙니다. <br>
+            최대 5회까지 중첩됩니다. 최대 중첩 시 다리우스가 분노하며 공격력이 크게 증가합니다.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="character-bg-img">
+        <div class="character-bg-img-wrap">
+          <div class="scroll-line right-scroll">
+            <div class="scroll-content">
+              <img src="../images/character-sub-bg01.png" alt="">
+              <img src="../images/character-sub-bg01.png" alt="">
+              <img src="../images/character-sub-bg01.png" alt="">
+              <img src="../images/character-sub-bg01.png" alt="">
+            </div>
+          </div>
+          <div class="scroll-line left-scroll">
+            <div class="scroll-content">
+              <img src="../images/character-sub-bg02.png" alt="">
+              <img src="../images/character-sub-bg02.png" alt="">
+              <img src="../images/character-sub-bg02.png" alt="">
+              <img src="../images/character-sub-bg02.png" alt="">
+              <img src="../images/character-sub-bg02.png" alt="">
+            </div>
+          </div>
+          <div class="scroll-line right-scroll">
+            <div class="scroll-content">
+              <img src="../images/character-sub-bg03.png" alt="">
+              <img src="../images/character-sub-bg03.png" alt="">
+              <img src="../images/character-sub-bg03.png" alt="">
+              <img src="../images/character-sub-bg03.png" alt="">
+              <img src="../images/character-sub-bg03.png" alt="">
+            </div>
+          </div>
+          <div class="scroll-line left-scroll">
+            <div class="scroll-content">
+              <img src="../images/character-sub-bg04.png" alt="">
+              <img src="../images/character-sub-bg04.png" alt="">
+              <img src="../images/character-sub-bg04.png" alt="">
+              <img src="../images/character-sub-bg04.png" alt="">
+              <img src="../images/character-sub-bg04.png" alt="">
+            </div>
+          </div>
+          <div class="scroll-line right-scroll">
+            <div class="scroll-content">
+              <img src="../images/character-sub-bg05.png" alt="">
+              <img src="../images/character-sub-bg05.png" alt="">
+              <img src="../images/character-sub-bg05.png" alt="">
+              <img src="../images/character-sub-bg05.png" alt="">
+              <img src="../images/character-sub-bg05.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="character-bg-img-overlay"></div>
+      </section>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <div class="footer-include"></div>
+  
+  <!---------------- aos ---------------->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
+  <!---------------- swiper ---------------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  
+  <!-- js -->
+  <script src="../js/character.js"></script>
+
+</body>
+  
+</html>

@@ -1,0 +1,18 @@
+/* Import Local SCSS Files */
+@import 'variables', 'reset', 'fonts', 'header', 'footer';
+
+/* common */
+body {
+  overflow-x: hidden;
+}
+
+section {
+  height: 100vh;
+}
+
+/* inner */
+[class*=inner] {
+  width: 1400px;
+  height: inherit;
+  margin: auto;
+}

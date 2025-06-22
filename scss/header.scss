@@ -1,0 +1,74 @@
+/* Import Local SCSS Files */
+@import 'variables', 'reset', 'fonts';
+
+/* header */
+.header{
+  width: 100vw;
+  height: 80px;
+  position: fixed;
+  top: 0; left: 50%; transform: translateX(-50%);
+  z-index: 1000000000;
+  background: linear-gradient($Pure-Black, transparent);
+  .header-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .header-logo-wrap{
+      .header-riot-logo{
+        margin-right: 10px;
+        &:hover{
+          img{
+            filter: brightness(0) saturate(100%) invert(15%) sepia(66%) saturate(6349%) hue-rotate(343deg) brightness(89%) contrast(113%);
+          }
+        }
+        img{
+          height: 100%;
+        }
+      }
+      .header-wildrift-logo{
+        &:hover{
+          img{
+            filter: brightness(0) saturate(100%) invert(70%) sepia(53%) saturate(492%) hue-rotate(156deg) brightness(91%) contrast(91%);
+          }
+        }
+        img{
+          height: 100%;
+        }
+      }
+    }
+    .header-nav{
+      margin: auto;
+      ul{
+        display: flex;
+        gap: 20px;
+        li{
+          a{
+            width: inherit;
+            padding: 20px;
+            position: relative;
+            font-size: $h4-px;
+            font-family: $Title-Font-Regular;
+            transition: .5s;
+            &:hover{
+              font-weight: bold;
+              color: $Lol-Sky-Blue;
+            }
+            &::after{
+              content: '';
+              width: 100%; height: 5px;
+              position: absolute;
+              bottom: 0; left: 0;
+              background-color: $Lol-Sky-Blue;
+              opacity: 0;
+              transition: .5s;
+            }
+            &:hover::after{
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+/* Import Local SCSS Files */
+@import 'variables', 'reset', 'fonts';
+
+/* footer */
+footer{
+  width: 100vw;
+  padding: 40px 0;
+  background: $Pure-Black;
+  .footer-inner{
+    position: relative;
+    z-index: 10000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .footer-img{
+      img{}
+    }
+    .footer-nav{
+      margin: auto;
+      width: 730px;
+      display: flex;
+      justify-content: space-between;
+      a{
+        color: #666;
+        transition: .3;
+        &:hover{
+          color: $White;
+        }
+      }
+    }
+    .footer-copyright{}
+    .footer-logo{
+      a{
+        cursor: pointer;
+        img{
+          transition: .1s;
+          &:hover{
+            filter: invert(13%) sepia(46%) saturate(7015%) hue-rotate(320deg) brightness(68%) contrast(171%);
+          }
+        }
+      }
+    }
+  }
+  .scroll-top-btn{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    width: 60px;
+    height: 80px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);       
+    transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+    transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    &.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .arrow-icon{
+      display: block;
+      transition: transform 0.3s ease;
+      path{
+        fill: $Lol-Gold; 
+        stroke: $Lol-Navy; 
+        stroke-width: 2;
+        stroke-linejoin: round;
+      }
+    }
+    &:hover{
+      .arrow-icon{
+        transform: scale(1.1);
+      }
+      .hover-block{
+        opacity: 1;
+        transform: translateY(0);
+        &:nth-of-type(2){
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+    .hover-block{
+      box-sizing: border-box;
+      width: 16px;
+      height: 6px;
+      background:$Lol-Gold;
+      border: 1px solid $Lol-Navy;
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      border-radius: 2px;
+      &:nth-of-type(2){
+        margin-top: 5px;
+        width: 10px;
+        height: 4px;
+        opacity: 0;
+      }
+    }
+  }  
+}
