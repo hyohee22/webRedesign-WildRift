@@ -1215,7 +1215,7 @@ section {
   transition: 0.3;
 }
 .more-btn:hover {
-  background-color: #FFFFFF;
+  background-color: #0E394A;
   color: #C8AA6E;
 }
 .more-btn:hover::after {
@@ -1340,8 +1340,8 @@ section {
   color: #000;
 }
 .event .event-container .event-btn-box .event-more-btn:hover {
-  background-color: #fff;
-  color: rgb(31, 13, 3);
+  color: #C8AA6E;
+  background-color: #0E394A;
 }
 .event .event-container .event-cards-wrapper {
   box-shadow: 0 0 5px #C8AA6E;

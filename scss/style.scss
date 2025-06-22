@@ -395,7 +395,7 @@ section {
           }
 
           &:hover {
-            background-color: $White;
+            background-color: $Lol-Teal-Dark;
             color: $Lol-Gold;
 
             &::after {
@@ -533,8 +533,8 @@ section {
         display: block;
         color: #000;
         &:hover{
-          background-color: #fff;
-          color: rgb(31, 13, 3)
+          color: $Lol-Gold;
+          background-color: $Lol-Teal-Dark;
         }
       }
     }
