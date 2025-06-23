@@ -1892,11 +1892,8 @@ section {
 .character .character-wrapper .position-btn button img {
   width: 30px;
 }
-.character .character-wrapper .position-btn button img .darius-img-hover{
-  background-color:$Lol-Teal-Dark;
-}
-.character .character-wrapper .position-btn button img.darius-img-hover{
-  background-color:$Lol-Teal-Dark;
+.character .character-wrapper .position-btn button.darius-img-hover{
+  background-color:$Lol-navy;
 }
 .character .character-wrapper .position-btn button:hover {
   background-color: #0E394A;
