@@ -1712,7 +1712,7 @@ section {
   border: 1px solid rgb(255, 255, 255);
   margin-top: 20px;
 }
-.character .character-wrapper .character-wrap .character-desc .character-btn-box {
+.character .character-wrapper .character-wrap .character-desc .character-btn-box:hover {
   border-color: $Lol-Gold;
 }
 .character .character-wrapper .character-wrap .character-desc .character-btn-box .character-more-btn {
