@@ -1327,7 +1327,7 @@ section {
   margin: 20px auto;
 }
 .event .event-container .event-btn-box:hover {
-  border-color: $Lol-Gold;
+  border-color: #C8AA6E;
 }
 .event .event-container .event-btn-box .event-more-btn {
   margin-top: 5px;
@@ -1713,7 +1713,7 @@ section {
   margin-top: 20px;
 }
 .character .character-wrapper .character-wrap .character-desc .character-btn-box:hover {
-  border-color: $Lol-Gold;
+  border-color: #C8AA6E;
 }
 .character .character-wrapper .character-wrap .character-desc .character-btn-box .character-more-btn {
   margin-top: 5px;
