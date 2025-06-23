@@ -1326,6 +1326,9 @@ section {
   border: 1px solid rgb(255, 255, 255);
   margin: 20px auto;
 }
+.event .event-container .event-btn-box:hover {
+  border-color: $Lol-Gold;
+}
 .event .event-container .event-btn-box .event-more-btn {
   margin-top: 5px;
   margin-left: 5px;
@@ -1708,6 +1711,9 @@ section {
   height: 50px;
   border: 1px solid rgb(255, 255, 255);
   margin-top: 20px;
+}
+.character .character-wrapper .character-wrap .character-desc .character-btn-box {
+  border-color: $Lol-Gold;
 }
 .character .character-wrapper .character-wrap .character-desc .character-btn-box .character-more-btn {
   margin-top: 5px;
