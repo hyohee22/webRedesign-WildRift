@@ -475,7 +475,7 @@ function add_slide(ob) {
     skin_swiper_wrapper.innerHTML += `
   <div class="swiper-slide">
     <div class="background-skin-img">
-      <img src=${ob.skinImg[i]} alt="">
+      <img src=${ob.skinImg[i]} alt="${ob.skinName[i]}">
       <div class="skin-desc-wrap">
         <h2 class="champion-name">${ob.name}</h2>
         <h3 class="skin-name">${ob.skinName[i]}</h3>
