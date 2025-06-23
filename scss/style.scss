@@ -521,6 +521,9 @@ section {
     .event-btn-box{
       width: 200px; height: 50px;
       border: 1px solid rgb(255, 255, 255); margin: 20px auto;
+      &:hover {
+        border-color: $Lol-Gold;
+      }
       .event-more-btn{
         margin-top: 5px;
         margin-left: 5px;
@@ -888,6 +891,9 @@ section {
         .character-btn-box{
           width: 200px; height: 50px;
           border: 1px solid rgb(255, 255, 255); margin-top: 20px;
+          &:hover {
+            border-color: $Lol-Gold;
+          }
           .character-more-btn{
             margin-top: 5px;
             margin-left: 5px;
