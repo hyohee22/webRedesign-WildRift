@@ -1042,7 +1042,11 @@ section {
         border: 1px solid rgba(255, 255, 255, 0.199);
         flex: 1; transition: 0.3s;
         background-color: rgba(87, 87, 87, 0.336);
-        img{width: 30px;}
+        img{width: 30px;
+        &.darius-img-hover{
+          background-color:$Lol-Teal-Dark;
+        }
+        }
         &:hover{
           background-color: $Lol-Teal-Dark;
         }
