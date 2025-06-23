@@ -531,10 +531,9 @@ section {
         line-height: 40px;
         width: 190px; height: 40px;
         background-color: $Lol-Gold;
-        font-size: 16px;
         transition: 0.3s;
         display: block;
-        color: #000;
+        color: #fff;
         &:hover{
           color: $Lol-Gold;
           background-color: $Lol-Teal-Dark;
