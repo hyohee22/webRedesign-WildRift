@@ -1043,6 +1043,9 @@ body {
   border: 1px solid rgb(255, 255, 255);
   margin: 50px auto 0 auto;
 }
+.notice .notice-btn-box:hover {
+  border-color: #C8AA6E;
+}
 .notice .notice-btn-box .notice-more-btn {
   margin-top: 5px;
   margin-left: 5px;
@@ -1151,6 +1154,9 @@ body {
   height: 50px;
   border: 1px solid rgb(255, 255, 255);
   margin: 20px auto 0 auto;
+}
+.sub-text .list-btn-box:hover {
+  border-color: #C8AA6E;
 }
 .sub-text .list-btn-box .list-more-btn {
   margin-top: 5px;
@@ -1270,6 +1276,9 @@ body {
   height: 50px;
   border: 1px solid rgb(255, 255, 255);
   margin: 20px auto 0 auto;
+}
+.sub-video .list-btn-box:hover {
+  border-color: #C8AA6E;
 }
 .sub-video .list-btn-box .list-more-btn {
   margin-top: 5px;
