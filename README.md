@@ -21,25 +21,6 @@
 > 2. Design: 2025.06.17. - 2025.06.20.
 > 3. Development: 2025.06.18. - 2025.06.22.
 
-<br/>
-<br/>
-<br/>
-
-<details>
-<summary>🇺🇸 English</summary>
-
-# Wild Rift
-Wild Rift
-
-</details>
-
-<details>
-<summary>🇯🇵 日本語</summary>
-
-# Wild Rift
-Wild Rift
-
-</details>
 
 <br/>
 <br/>
